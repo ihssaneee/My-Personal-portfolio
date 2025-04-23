@@ -8,11 +8,11 @@ background: linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 15, 43, 1) 5
     
 }
 .bg-gradient-custom{
-   background:linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 15, 43, 1) 50%, rgba(58, 26, 74, 1) 100%);
+   background:linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 16, 43, 1) 50%, rgba(58, 27, 74, 1) 100%);
 }
 
 .typing {
-    width: 40ch;
+    width: 38ch;
     animation: typing 3s steps(70) infinite alternate-reverse ;
     white-space: nowrap;
     overflow: hidden;
@@ -23,3 +23,15 @@ background: linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 15, 43, 1) 5
         width: 0ch;
     }
   }
+  .card-wrapper {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .card-wrapper.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+

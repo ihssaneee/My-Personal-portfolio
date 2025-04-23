@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-
+import ParticlesBackground from "./ParticlesBackground";
 export default function Header(){
  const listItemStyle="hover:text-white cursor-pointer hover:underline lg:p-0 px-3 py-2 border-b-0.5 ";
 const [isToggled,setIsToggled]=useState(false);
@@ -9,7 +9,7 @@ const [isToggled,setIsToggled]=useState(false);
     }
     return(
       
-            <nav className="flex justify-between font-poppins  gap-7 text-lg lg:m-7 my-4 z-50 ">
+        <nav className="flex bg-gradient-custom justify-between font-poppins gap-7 text-lg p-7 mb-4 relative z-[9999] ">
             
                 <div className="lg:ml-14 text-wrap ml-3 ">
                     <h2 className="font-medium text-white text-xl ">Ihssane | Full Stack Developer</h2>
@@ -17,7 +17,7 @@ const [isToggled,setIsToggled]=useState(false);
                 <div className={`${isToggled?"block":""} text-white lg:hidden relative mr-1 `}>
                     <MenuIcon className="" fontSize="large" onClick={handleClick} />
                 </div>
-                <ul className={`list-none text-neutral-300 lg:gap-7 lg:flex-row lg:flex ${isToggled?"flex pb-2 flex-col bg-gradient-custom border-b-2 border-t-1 rounded-b-4xl   bg-opacity-90 z-10  w-full absolute top-20 ":"hidden"} `}>
+                <ul className={`list-none text-neutral-300 lg:gap-7 lg:flex-row lg:flex ${isToggled?"flex pb-2 flex-col bg-gradient-custom border-b-2 border-t-1 rounded-b-4xl   bg-opacity-90 z-10  w-full absolute top-20 left-0 right-0":"hidden"} `}>
                {/* <ul className="list-none lg:flex-row  gap-7 text-neutral-300 flex-col top-14 hidden lg:flex  "> */}
 
 
@@ -27,6 +27,7 @@ const [isToggled,setIsToggled]=useState(false);
                     <li className={listItemStyle}>Contacts</li>
                     <li className={listItemStyle}>Resume</li>
                </ul>
+               
             </nav>
         
     )
