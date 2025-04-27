@@ -1,6 +1,5 @@
 import React from "react";
-import MenuIcon from '@mui/icons-material/Menu';
-import ParticlesBackground from "./ParticlesBackground";
+
 export default function Hero(){
 
 
@@ -15,7 +14,7 @@ export default function Hero(){
             <p className="text-white lg:text-4xl typing  lg:pb-1 text-[21px] " >Building innovative digital experiences</p>
            </div>
            <div className=" -mt-14 ">
-            <img src="src/assets/TP1_56_94_copie-removebg-preview.png" className="h-auto max-w-lg  shadow-purple-950 shadow-md outline-2 border-2 border-t-0 rounded-4xl  px-3   -translate-x-2.5 border-purple-950  mix-blend-screen  " alt="personal_picture"/>
+            <img src="src\assets\personalPicture.png" className="h-auto max-w-lg  shadow-purple-950 shadow-md outline-2 border-2 border-t-0 rounded-4xl  px-3   -translate-x-2.5 border-purple-950  mix-blend-screen  " alt="personal_picture"/>
            </div>
         </div>
     )

@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import ParticlesBackground from "./ParticlesBackground";
-export default function Header(){
+import { Link } from "react-router-dom";
+export default function Header({scrollToSection,aboutRef,skillsRef,projectsRef}){
  const listItemStyle="hover:text-white cursor-pointer hover:underline lg:p-0 px-3 py-2 border-b-0.5 ";
 const [isToggled,setIsToggled]=useState(false);
     const handleClick=()=>{
         setIsToggled(!isToggled);
     }
+   
     return(
       
         <nav className="flex bg-gradient-custom justify-between font-poppins gap-7 text-lg p-7 mb-4 relative z-[9999] ">
@@ -21,10 +22,10 @@ const [isToggled,setIsToggled]=useState(false);
                {/* <ul className="list-none lg:flex-row  gap-7 text-neutral-300 flex-col top-14 hidden lg:flex  "> */}
 
 
-                <li className={listItemStyle}>About</li>
-                    <li className={listItemStyle}>Skills</li>
-                    <li className={listItemStyle}>Projects</li>
-                    <li className={listItemStyle}>Contacts</li>
+                <li className={listItemStyle} onClick={()=>scrollToSection(aboutRef)} >About</li>
+                    <li className={listItemStyle} onClick={()=>scrollToSection(skillsRef)}>Skills</li>
+                    <li className={listItemStyle} onClick={()=>scrollToSection(projectsRef)}>Projects</li>
+                    <li className={listItemStyle}>Contact</li>
                     <li className={listItemStyle}>Resume</li>
                </ul>
                

@@ -3,7 +3,7 @@ import React from "react";
 
 export default function About(){
     return(
-        <div className="lg:p-9 p-4 font-poppins flex flex-col justify-between gap-7">
+        <div  className="lg:p-9 p-4 font-poppins flex flex-col justify-between gap-7">
             <div className="">
                 <h3 className="text-5xl font-bold text-white">About</h3>
             </div>
