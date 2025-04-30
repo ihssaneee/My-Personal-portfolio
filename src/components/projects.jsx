@@ -6,8 +6,8 @@ import github from "../assets/github.png"
 
 const Projects = () => {
   return (
-    <div className='p-4 flex flex-col gap-8 '>
-      <div className="lg:pt-4 lg:px-9 px-2.5 py-3 font-poppins flex flex-col gap-5 my-6">
+    <div className='p-4 flex flex-col gap-8 lg:justify-normal lg:flex-wrap lg:items-start justify-center items-center'>
+      <div className="lg:pt-4 lg:px-9 px-2.5 py-3 font-poppins flex flex-col gap-5  my-6">
         <h3 className="text-white font-bold text-5xl font-poppins">Projects</h3>
         <div className='text-secondary max-w-3xl'>
         Below, you'll find a selection of projects that demonstrate my skills and experience in web development. Each project includes a brief overview, links to the code repository, and a live demo. These projects showcase my ability to tackle complex challenges, work with a range of technologies, and deliver high-quality results."
@@ -15,14 +15,12 @@ const Projects = () => {
         
       </div>
 
-        <div className='w-[400px] h-auto lg:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
+        <div className='w-[400px] h-auto xl:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
           {projects.map((project,index)=>(
               <ProjectCard key={index} image={project.image} description={project.description} name={project.name} source_code_link={project.source_code_link} tags={project.tags}  />
           ))}
         </div>
-      <div>
-        something
-      </div>
+     
     </div>
   );
 };

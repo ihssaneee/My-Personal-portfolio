@@ -18,7 +18,7 @@ const [isToggled,setIsToggled]=useState(false);
                 <div className={`${isToggled?"block":""} text-white lg:hidden relative mr-1 `}>
                     <MenuIcon className="" fontSize="large" onClick={handleClick} />
                 </div>
-                <ul className={`list-none text-neutral-300 lg:gap-7 lg:flex-row lg:flex ${isToggled?"flex pb-2 flex-col bg-gradient-custom border-b-2 border-t-1 rounded-b-4xl   bg-opacity-90 z-10  w-full absolute top-20 left-0 right-0":"hidden"} `}>
+                <ul className={`list-none text-neutral-300 lg:gap-7 lg:flex-row lg:flex ${isToggled?"flex pb-2 flex-col bg-gradient-custom border-b-2  pl-6 pt-4 rounded-b-4xl   bg-opacity-90 z-10  w-full absolute top-20 left-0 right-0":"hidden"} `}>
                {/* <ul className="list-none lg:flex-row  gap-7 text-neutral-300 flex-col top-14 hidden lg:flex  "> */}
 
 
