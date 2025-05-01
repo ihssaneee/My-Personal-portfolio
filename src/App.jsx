@@ -38,7 +38,7 @@ function App() {
    <div className='relative top-44' ref={projectsRef} >
     <Projects />
    </div>
-   <div className='relative top-64 my-20 overflow-hidden' >
+   <div className='relative top-64  overflow-hidden w-full' >
     <Contact />
    </div>
    

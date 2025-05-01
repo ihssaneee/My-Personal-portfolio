@@ -2,8 +2,12 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import {useMediaQuery} from 'react-responsive';
 
 const ParticlesBackground = () => {
+  const isLargeScreen=useMediaQuery({query:"(min-width:1024px)"});
+  const isSmallScreen=useMediaQuery({query:"(max-width:768px)"});
+  const interactivityHover=isLargeScreen?true:false;
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);

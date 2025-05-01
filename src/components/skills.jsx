@@ -49,13 +49,13 @@ const Skills = () => {
       </motion.div>
 
       <div
-        className="flex  flex-wrap lg:gap-0 gap-12 items-center mx-3  lg:m-0 my-7 "
+        className="flex  flex-wrap lg:gap-0 gap-9 items-center mx-3  lg:m-0 my-7 "
         ref={containerRef}
       >
         {skills.map((skill, i) => (
           <div
             key={i}
-            className="opacity-0 w-[80px] h-[40px] lg:w-[105px] transition-[opacity] duration-500"
+            className="opacity-0 w-[60px] h-[40px] lg:w-[105px]  transition-[opacity] duration-500"
             ref={(el) => (skillsRef.current[i] = el)}
           >
             <Card label={skill.label} icon={skill.icon} />

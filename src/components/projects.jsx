@@ -15,7 +15,7 @@ const Projects = () => {
         
       </div>
 
-        <div className='w-[400px] h-auto xl:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
+        <div className='lg:w-[400px] max-w-[400px]  h-auto xl:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
           {projects.map((project,index)=>(
               <ProjectCard key={index} image={project.image} description={project.description} name={project.name} source_code_link={project.source_code_link} tags={project.tags}  />
           ))}
