@@ -49,4 +49,12 @@ background: linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 15, 43, 1) 5
     transform: translateY(0);
   }
 
+ input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #66497a inset !important;
+   -webkit-text-fill-color:whitesmoke ;
+} 
+
 

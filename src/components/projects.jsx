@@ -2,7 +2,8 @@ import Tilt from 'react-parallax-tilt';
 import React from 'react';
 import adminDashboard from '../assets/projects/adminDashboard.png';
 import { projects } from '../constants';
-import github from "../assets/github.png"
+import github from "../assets/github.png";
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -17,7 +18,7 @@ const Projects = () => {
 
         <div className='lg:w-[400px] max-w-[400px]  h-auto xl:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
           {projects.map((project,index)=>(
-              <ProjectCard key={index} image={project.image} description={project.description} name={project.name} source_code_link={project.source_code_link} tags={project.tags}  />
+              <ProjectCard key={index} image={project.image} description={project.description} name={project.name} source_code_link={project.source_code_link} tags={project.tags} index={index} />
           ))}
         </div>
      
@@ -25,10 +26,11 @@ const Projects = () => {
   );
 };
 
-const ProjectCard=({image,description,name,tags,source_code_link})=>{
+const ProjectCard=({image,description,name,tags,source_code_link,index})=>{
 
   return(
-    <Tilt className="w-full "
+    <motion.div  initial={{opacity:0}} whileInView={{opacity:[1]}} transition={{delay: index * 0.8,duration:0.75,type:'spring'}} viewport={{once:true}} className='w-full' >
+      <Tilt className="w-full "
       >
          <div className='w-full h-full flex flex-col bg-[#10102C] shadow-lg  relative  p-3 rounded-2xl  sm:w-[360px] font-poppins'>
               <div className=' w-[320px] h-[240px] mx-auto mt-2'>
@@ -51,6 +53,8 @@ const ProjectCard=({image,description,name,tags,source_code_link})=>{
               </div>
           </div>
       </Tilt>
+    </motion.div>
+    
     
   )
 
