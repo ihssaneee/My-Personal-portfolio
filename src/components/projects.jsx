@@ -1,6 +1,6 @@
 import Tilt from 'react-parallax-tilt';
 import React from 'react';
-import adminDashboard from '../assets/projects/adminDashboard.png';
+
 import { projects } from '../constants';
 import github from "../assets/github.png";
 import { motion } from 'framer-motion';
