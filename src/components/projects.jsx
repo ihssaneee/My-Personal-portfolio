@@ -4,17 +4,17 @@ import adminDashboard from '../assets/projects/adminDashboard.png';
 import { projects } from '../constants';
 import github from "../assets/github.png";
 import { motion } from 'framer-motion';
-
+import { fadeDown } from './utils/motion';
 const Projects = () => {
   return (
     <div className='p-4 flex flex-col gap-8 lg:justify-normal lg:flex-wrap lg:items-start justify-center items-center'>
-      <div className="lg:pt-4 lg:px-9 px-2.5 py-3 font-poppins flex flex-col gap-5  my-6">
+      <motion.div  variants={fadeDown()} initial='hidden' whileInView='visible' viewport={{once:true,amount:0.5}}  className="lg:pt-4 lg:px-9 px-2.5 py-3 font-poppins flex flex-col gap-5  my-6">
         <h3 className="text-white font-bold text-5xl font-poppins">Projects</h3>
         <div className='text-secondary max-w-3xl'>
         Below, you'll find a selection of projects that demonstrate my skills and experience in web development. Each project includes a brief overview, links to the code repository, and a live demo. These projects showcase my ability to tackle complex challenges, work with a range of technologies, and deliver high-quality results."
         </div>
         
-      </div>
+      </motion.div>
 
         <div className='lg:w-[400px] max-w-[400px]  h-auto xl:flex-row  px-3 flex flex-col  gap-4 lg:mx-24 ' >
           {projects.map((project,index)=>(
@@ -29,7 +29,7 @@ const Projects = () => {
 const ProjectCard=({image,description,name,tags,source_code_link,index})=>{
 
   return(
-    <motion.div  initial={{opacity:0}} whileInView={{opacity:[1]}} transition={{delay: index * 0.8,duration:0.75,type:'spring'}} viewport={{once:true}} className='w-full' >
+    <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay: index * 0.8,duration:0.75}} viewport={{once:true}} className='w-full' >
       <Tilt className="w-full "
       >
          <div className='w-full h-full flex flex-col bg-[#10102C] shadow-lg  relative  p-3 rounded-2xl  sm:w-[360px] font-poppins'>

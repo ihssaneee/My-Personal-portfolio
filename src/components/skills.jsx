@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { fadeDown } from "./utils/motion";
 const Skills = () => {
   const skills = [
     { label: "HTML", icon: "src/assets/skills/html.svg" },
@@ -38,10 +39,7 @@ const Skills = () => {
   return (
     <div className="font-poppins p-4  ">
       <motion.div
-        initial={{ opacity: 0, y: -100 }} // Increase the y offset
-        whileInView={{ opacity: [0, 0.3, 0.6, 1], y: 0 }} // Final position
-        transition={{ duration: 1 }} // Slow down the animation
-        viewport={{ once: true }}
+       variants={fadeDown()} initial='hidden' whileInView='visible' viewport={{once:true,amount:0.5}}
       >
         <div className="lg:p-9">
           <h3 className="text-white text-5xl font-poppins font-bold">Skills</h3>

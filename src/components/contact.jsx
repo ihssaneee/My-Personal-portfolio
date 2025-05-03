@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import {BeatLoader} from 'react-spinners';
 import { motion } from "framer-motion";
 import { slideIn } from "./utils/motion";
+
 const Contact = () => {
   const inputStyle="bg-[#341846] p-3 rounded-md focus:ring-0  focus:outline-none form_input"
   const divStyle="flex flex-col gap-2 text-white my-4"
@@ -57,9 +58,10 @@ const Contact = () => {
 
   }
   return (
-    <div className=" overflow-hidden   flex lg:flex-row w-full py-8 flex-col-reverse ">
-      <div className="flex flex-col gap-2 text-white">
-      <div className=" bg-[#10102C] lg:ml-14 font-poppins w-full rounded-2xl border-2 border-[#A18398] shadow-lg shadow-[#A18398]">
+    <div className=" overflow-hidden xl:gap-1 gap-24  flex xl:flex-row w-full py-24 flex-col-reverse ">
+      
+      <div className="flex flex-col gap-2 text-white z-10 ">
+      <div className=" bg-[#10102C] xl:ml-14  font-poppins w-full rounded-2xl border-2 border-[#A18398] shadow-lg shadow-[#A18398]">
           <div className="m-4">
           <p className="text-secondary p-3 text-lg">GET IN TOUCH</p>
           <h3 className="text-6xl font-bold p-3 text-white">Contact</h3>
@@ -92,7 +94,7 @@ const Contact = () => {
         </form>
       </div>
       </div>
-        <motion.div variants={slideIn()} initial="hidden" whileInView="visible"  viewport={{ once: true }} className=" w-full flex-[1]" >
+        <motion.div variants={slideIn('right',3)} initial="hidden" whileInView="visible"  viewport={{ once: true }} className="  lg:w-full flex-[1]" >
      
         <HologramCanvas />
       </motion.div>
