@@ -3,16 +3,16 @@ import { motion } from "framer-motion";
 import { fadeDown } from "./utils/motion";
 const Skills = () => {
   const skills = [
-    { label: "HTML", icon: "src/assets/skills/html.svg" },
-    { label: "Laravel", icon: "src/assets/skills/laravel.svg" },
-    { label: "Javascript", icon: "src/assets/skills/javascript.svg" },
-    { label: "Css", icon: "src/assets/skills/css.svg" },
-    { label: "Tailwind", icon: "src/assets/skills/tailwind-css.svg" },
-    { label: "React", icon: "src/assets/skills/react.svg" },
-    { label: "Sql", icon: "src/assets/skills/sql-database.svg" },
-    { label: "Git", icon: "src/assets/skills/git.svg" },
-    { label: "MongoDb", icon: "src/assets/skills/mongodb.svg" },
-    { label: "Python", icon: "src/assets/skills/python.svg" },
+    { label: "HTML", icon: "../assets/skills/html.svg" },
+    { label: "Laravel", icon: "../assets/skills/laravel.svg" },
+    { label: "Javascript", icon: "../assets/skills/javascript.svg" },
+    { label: "Css", icon: "../assets/skills/css.svg" },
+    { label: "Tailwind", icon: "../assets/skills/tailwind-css.svg" },
+    { label: "React", icon: "../assets/skills/react.svg" },
+    { label: "Sql", icon: "../assets/skills/sql-database.svg" },
+    { label: "Git", icon: "../assets/skills/git.svg" },
+    { label: "MongoDb", icon: "../assets/skills/mongodb.svg" },
+    { label: "Python", icon: "../assets/skills/python.svg" },
   ];
   const skillsRef = useRef([]);
   const containerRef = useRef(null);
