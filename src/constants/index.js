@@ -1,6 +1,6 @@
-import CoffeeShopWebsite from "../assets/projects/coffeeShopWebsite2.PNG"
-import adminDashboard from "../assets/projects/905_1x_shots_so.png";
-import electronicsWebsite from "../assets/projects/electronics-app.png";
+import CoffeeShopWebsite from "/assets/projects/coffeeShopWebsite2.PNG"
+import adminDashboard from "/assets/projects/905_1x_shots_so.png";
+import electronicsWebsite from "/assets/projects/electronics-app.png";
 export const projects=[
     {
         name:"Coffee shop website",

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from "react-router-dom";
-import logo from "../assets/logo1.webp";
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.svg";
+import logo from "/assets/logo1.webp";
+import github from "/assets/github.png";
+import linkedin from "/assets/linkedin.svg";
 
 export default function Header({scrollToSection,...refs}){
  const listItemStyle="hover:text-white cursor-pointer hover:underline lg:p-0 px-3 py-2 border-b-0.5 ";

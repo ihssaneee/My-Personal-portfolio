@@ -2,7 +2,7 @@ import Tilt from 'react-parallax-tilt';
 import React from 'react';
 
 import { projects } from '../constants';
-import github from "../assets/github.png";
+import github from "/assets/github.png";
 import { motion } from 'framer-motion';
 import { fadeDown } from './utils/motion';
 const Projects = () => {
