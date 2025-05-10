@@ -20,6 +20,9 @@ export default function About() {
         forward to collaborating with a team of like-minded professionals to
         drive project success.
       </div>
+      <div className="">
+        <a className="text-white text-[20px] font-bold cursor-pointer" href="https://drive.google.com/file/d/18WLgd2G6c-ik8XpwojP5ZYc6i7RX7G1u/view?usp=sharing" target="_blank">Download Resume</a>
+      </div>
     </motion.div>
   );
 }

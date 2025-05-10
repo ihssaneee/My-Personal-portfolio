@@ -39,7 +39,7 @@ const [isToggled,setIsToggled]=useState(false);
                     <li className={listItemStyle} onClick={()=>scrollToSection(refs.skillsRef)}>Skills</li>
                     <li className={listItemStyle} onClick={()=>scrollToSection(refs.projectsRef)}>Projects</li>
                     <li className={listItemStyle} onClick={()=>scrollToSection(refs.contactRef)}>Contact</li>
-                    <li className={listItemStyle}>Resume</li>
+                   
                </ul>
                
             </nav>
