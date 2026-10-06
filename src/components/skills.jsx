@@ -13,6 +13,15 @@ const Skills = () => {
     { label: "Git", icon: "/assets/skills/git.svg" },
     { label: "MongoDb", icon: "/assets/skills/mongodb.svg" },
     { label: "Python", icon: "/assets/skills/python.svg" },
+    { label: "Typescript", icon: "/assets/skills/typeScript.svg" },
+    { label: "PostgreSQL", icon: "/assets/skills/postgresql.svg" },
+    { label: "NodeJs", icon: "/assets/skills/node.js.svg" },
+    { label: "NextJs", icon: "/assets/skills/next.js.svg" },
+    { label: "ExpressJs", icon: "/assets/skills/express.svg" },
+    {label: "Docker", icon: "/assets/skills/docker.svg" },
+    {label: "C#", icon: "/assets/skills/c-sharp.svg" },
+    {label: "Angular", icon: "/assets/skills/angular.svg" },
+    {label: "ASP.NET Core", icon: "/assets/skills/aspnet-core.svg" },
   ];
   const skillsRef = useRef([]);
   const containerRef = useRef(null);
@@ -47,13 +56,13 @@ const Skills = () => {
       </motion.div>
 
       <div
-        className="flex  flex-wrap lg:gap-0 gap-9 items-center mx-3  lg:m-0 my-7 "
+        className="flex flex-wrap gap-x-4 gap-y-8 lg:gap-x-3 lg:gap-y-8 items-center mx-3 lg:mx-6 my-7"
         ref={containerRef}
       >
         {skills.map((skill, i) => (
           <div
             key={i}
-            className="opacity-0 w-[60px] h-[40px] lg:w-[105px]  transition-[opacity] duration-500"
+            className="opacity-0 w-[72px] h-[72px] lg:w-[105px] lg:h-[80px] transition-[opacity] duration-500"
             ref={(el) => (skillsRef.current[i] = el)}
           >
             <Card label={skill.label} icon={skill.icon} />
@@ -75,8 +84,8 @@ export const Card = ({ label, icon }) => {
             className="w-14 h-14 flex items-center justify-center back "
           />
         </div>
-        <div className="backface-hidden bg-[#11142E]  rotate-y-180  absolute text-white border-2 border-purple-950 shadow-purple-950 shadow-lg h-full w-full items-center rounded-md px-4 flex justify-center ">
-          <h3 className="text-white text-lg ">{label}</h3>
+        <div className="backface-hidden bg-[#11142E] rotate-y-180 absolute text-white border-2 border-purple-950 shadow-purple-950 shadow-lg h-full w-full items-center rounded-md px-1 flex justify-center text-center">
+          <h3 className="text-white text-sm leading-tight">{label}</h3>
         </div>
       </div>
     </div>

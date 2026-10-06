@@ -9,19 +9,17 @@ export default function About() {
         <h3 className="text-5xl font-bold text-white">About</h3>
       </div>
       <div   className="text-lg text-neutral-300 max-w-4xl ">
-        As a driven and detail-oriented aspiring full-stack developer, I'm
-        passionate about crafting innovative web applications that deliver
-        seamless user experiences. With a solid foundation in HTML, CSS, and
-        JavaScript, I've expanded my skill set to include frameworks like React
-        and Laravel, as well as databases like SQL and MongoDB. I'm also
-        proficient in Tailwind CSS, which I've used to build responsive and
-        visually appealing interfaces. I'm excited to apply my skills to build
-        scalable, efficient, and user-friendly web applications, and I'm looking
-        forward to collaborating with a team of like-minded professionals to
-        drive project success.
+  I'm a full-stack developer with professional experience building and maintaining web applications using Laravel, React, PostgreSQL, and REST APIs.
+
+I've worked on business applications covering purchasing, inventory, HR, payments, document management, and approval workflows, with a focus on maintainable code, data integrity, validation, and API development.
+
+I'm currently expanding my expertise in C#, ASP.NET Core, Angular, TypeScript, and Docker, building applications that strengthen my understanding of modern backend architecture, authentication, APIs, databases, frontend development, and containerized environments.
+
+I enjoy understanding how systems work beyond simply implementing features, and I'm focused on becoming a well-rounded full-stack developer capable of contributing effectively to real-world applications.
+
       </div>
       <div className="">
-        <a className="text-white text-[20px] font-bold cursor-pointer" href="https://drive.google.com/file/d/18WLgd2G6c-ik8XpwojP5ZYc6i7RX7G1u/view?usp=sharing" target="_blank">Download Resume</a>
+        <a className="text-white text-[20px] font-bold cursor-pointer" href="https://drive.google.com/file/d/1YxT1oqXUAPlvUyO1yUJ9LwlVdleU6g7C/view?usp=sharing" target="_blank">Download Resume</a>
       </div>
     </motion.div>
   );

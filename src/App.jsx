@@ -4,6 +4,7 @@ import Hero from './components/hero'
 import ParticlesBackground from './components/ParticlesBackground'
 import About from './components/about';
 import Skills from './components/skills';
+import Experience from './components/experience';
 import Projects from './components/projects';
 import Contact from './components/contact';
 import { Stars } from '@react-three/drei';
@@ -13,6 +14,7 @@ function App() {
     const navRef=useRef(null);
     const aboutRef=useRef(null);
     const skillsRef=useRef(null);
+    const experienceRef=useRef(null);
     const projectsRef=useRef(null);
     const contactRef=useRef(null);
     const scrollToSection=(ref)=>{
@@ -26,7 +28,7 @@ function App() {
     <div className=' '>
     
      <div className='fixed w-full z-[9999]  ' >
-      <Header scrollToSection={scrollToSection}  aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
+      <Header scrollToSection={scrollToSection}  aboutRef={aboutRef} skillsRef={skillsRef} experienceRef={experienceRef} projectsRef={projectsRef} contactRef={contactRef}/>
      </div>
      <div className='-z-50' >
      <ParticlesBackground />
@@ -34,16 +36,19 @@ function App() {
    <div className='relative top-32 overflow-hidden    ' >
     <Hero />
    </div>
-   <div className='relative top-44' ref={aboutRef}>
+   <div className='relative top-44 scroll-mt-28' ref={aboutRef}>
     <About />
    </div>
-   <div className='relative top-44' ref={skillsRef}>
+   <div className='relative top-44 scroll-mt-28' ref={skillsRef}>
     <Skills />
    </div>
-   <div className='relative top-44 z-5' ref={projectsRef} >
+   <div className='relative top-44 scroll-mt-28' ref={experienceRef}>
+    <Experience />
+   </div>
+   <div className='relative top-44 scroll-mt-28 z-5' ref={projectsRef} >
     <Projects />
    </div>
-   <div className='relative  top-36 xl:top-54 md:top-38 overflow-hidden w-full' ref={contactRef} >
+   <div className='relative top-36 xl:top-54 md:top-38 scroll-mt-28 overflow-hidden w-full' ref={contactRef} >
    
     <div className=' absolute inset-0'>
       <StarsBackground />

@@ -49,6 +49,18 @@ background: linear-gradient(90deg, rgba(26, 42, 58, 1) 0%, rgba(15, 15, 43, 1) 5
     transform: translateY(0);
   }
 
+.experience-timeline .vertical-timeline-element-content h3 {
+  color: #ffffff;
+}
+
+.experience-timeline .vertical-timeline-element-date {
+  color: #ffffff;
+}
+
+.experience-timeline .vertical-timeline-element-content-arrow {
+  border-right-color: #1d1836;
+}
+
  input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
